@@ -19,7 +19,8 @@ KISIA S-Developer 2026 | toy project
 │   ├── handler.py          # zero-copy 핸들러 (pyarrow/mmap 기반)
 │   ├── ringbuffer.py       # eBPF 통신용 링버퍼 모듈
 │   ├── shm_init.py         # 공유 메모리 초기화 스크립트
-│   ├── entrypoint.sh       
+│   ├── entrypoint.sh
+│   ├── shm_registry.py        # SHM 상태 및 lock 관리
 │   ├── Dockerfile          
 │   └── docker-compose.yml  # Host IPC 및 /dev/shm 공유 설정 포함
 ├── ebpf_writer.py          # eBPF 기반 커널 이벤트 트레이서 및 SHM 기록기
